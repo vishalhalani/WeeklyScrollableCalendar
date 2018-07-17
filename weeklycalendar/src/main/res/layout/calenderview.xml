@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="100"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+
+        android:id="@+id/calendar_view_cal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="15"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ic_cal"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:src="@drawable/ic_calendar"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/monthTv"
+            style="@style/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ic_cal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="jan - 2018"
+            android:textColor="@color/primary_text_color"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/nowTv"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="@dimen/_25sdp"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:layout_marginStart="@dimen/_10sdp"-->
+        <!--android:layout_marginLeft="@dimen/_10sdp"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_toEndOf="@+id/monthTv"-->
+        <!--android:layout_toRightOf="@+id/monthTv"-->
+        <!--android:background="@drawable/ovel"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Now"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textSize="@dimen/_12ssp"-->
+
+        <!--/>-->
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="85"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/colorPrimaryDark" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_sunday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SUN"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_monday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="MON"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_tuesday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="TUE"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_wednesday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="WED"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_thursday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="THU"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_friday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="FRI"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/week_saturday"
+                    style="@style/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="SAT"
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_pages"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+</LinearLayout>
