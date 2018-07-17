@@ -5,4 +5,4 @@ User can customize shape of current date selector and selected date selector.
 
 User also can add there own color for days text and default date text.
 
-<img src="WeeklyScrollableCalendar/Screenshot_1531836396.png"/>
+<img src="https://github.com/vishalhalani/WeeklyScrollableCalendar/blob/master/Screenshot_1531836396.png"/>
